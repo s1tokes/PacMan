@@ -11,11 +11,11 @@
 #include <iostream>
 #include "Grid.hpp"
 
-class Map{
+class Map2D{
     int row, col;
     Grid** obstacles;
     
-    Map(int r, int c);
+    Map2D(int r, int c);
     
 };
 
