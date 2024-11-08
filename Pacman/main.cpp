@@ -9,6 +9,8 @@
 #include <iostream>
 #include <OpenGL/gl.h>
 #include <GLUT/glut.h>
+#include "Map2D.hpp"
+#include "Sprite.hpp"
 
 void display(){
     glClear(GL_COLOR_BUFFER_BIT);
@@ -18,8 +20,11 @@ void display(){
     glutSwapBuffers();
 }
 
+Map2D map(15, 15);
+
 int main(int argc, char * argv[]) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     
+    glutDisplayFunc(display);
 }

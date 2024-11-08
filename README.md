@@ -1,1 +1,3 @@
 # PacMan
+Pacman
+Pacman.xcodeproj

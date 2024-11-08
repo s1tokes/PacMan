@@ -7,21 +7,28 @@
 
 #ifndef Grid_hpp
 #define Grid_hpp
-
-#include <stdio.h>
+															
+#include <iostream>
 
 class Grid{
-    enum State {SMALL_POINT, BIG_POINT, EATEN};
+public:
+    enum Orientation {PLUS_X, MINUS_X, PLUS_Y, MINUS_Y, PLUS_Z, MINUS_Z}; // 0, 1, 2, 3, 4, 5
+    enum State {SMALL_POINT, LARGE_POINT, EATEN, WALL}; // 0, 1, 2, 3
+    static std::string texFileName[4];
+    static int size;
     
-    bool isWall;
+    Grid(State s, int x, int y);
+    Grid(State s, int x, int y, int z);
+    void draw2D() const;
+    void draw3D() const;
+    void setState(State s);
+    
     State state;
     Grid* adj[4];
     
-    static int size;
-    int posX, posY;
-    
-    Grid(bool wall, State s, int x, int y);
-    void draw() const;
+    float origin[3]; // meeting point of 0-side and 1-side
+    float dir_zero[3]; // direction vector of 0-side
+    float dir_one[3]; // direction vector of 1-side
 };
 
 #endif /* Grid_hpp */

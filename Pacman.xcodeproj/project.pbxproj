@@ -12,6 +12,7 @@
 		1E43A4762CD3532A0054B1A8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E43A4732CD352550054B1A8 /* OpenGL.framework */; };
 		1E43A47A2CD867170054B1A8 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E43A4782CD867170054B1A8 /* Map.cpp */; };
 		1E43A47D2CD867E90054B1A8 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E43A47B2CD867E90054B1A8 /* Grid.cpp */; };
+		1EB95F312CDB2F7D00783D73 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB95F2F2CDB2F7D00783D73 /* Sprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,9 +33,11 @@
 		1E43A4712CD3524F0054B1A8 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		1E43A4732CD352550054B1A8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		1E43A4782CD867170054B1A8 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
-		1E43A4792CD867170054B1A8 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
+		1E43A4792CD867170054B1A8 /* Map2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map2D.hpp; sourceTree = "<group>"; };
 		1E43A47B2CD867E90054B1A8 /* Grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
 		1E43A47C2CD867E90054B1A8 /* Grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grid.hpp; sourceTree = "<group>"; };
+		1EB95F2F2CDB2F7D00783D73 /* Sprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		1EB95F302CDB2F7D00783D73 /* Sprite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sprite.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +75,11 @@
 			children = (
 				1E43A4692CD3522F0054B1A8 /* main.cpp */,
 				1E43A4782CD867170054B1A8 /* Map.cpp */,
-				1E43A4792CD867170054B1A8 /* Map.hpp */,
+				1E43A4792CD867170054B1A8 /* Map2D.hpp */,
 				1E43A47B2CD867E90054B1A8 /* Grid.cpp */,
 				1E43A47C2CD867E90054B1A8 /* Grid.hpp */,
+				1EB95F2F2CDB2F7D00783D73 /* Sprite.cpp */,
+				1EB95F302CDB2F7D00783D73 /* Sprite.hpp */,
 			);
 			path = Pacman;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			files = (
 				1E43A47D2CD867E90054B1A8 /* Grid.cpp in Sources */,
 				1E43A47A2CD867170054B1A8 /* Map.cpp in Sources */,
+				1EB95F312CDB2F7D00783D73 /* Sprite.cpp in Sources */,
 				1E43A46A2CD3522F0054B1A8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
